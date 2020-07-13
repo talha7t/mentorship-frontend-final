@@ -1,0 +1,262 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Times New Roman", Times, serif;
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+  line-height: 1.5;
+}
+
+.heading {
+  font-family: "Playfair Display", serif;
+  font-size: 2.5rem;
+  font-weight: 400;
+  letter-spacing: 8px;
+}
+
+.section-img {
+  max-width: 100%;
+  height: auto;
+  opacity: 0.75;
+}
+
+.section-display {
+  padding: 10vh 5vw;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  -webkit-column-gap: 5rem;
+  column-gap: 5rem;
+}
+
+hr {
+  width: 90%;
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  border: 0;
+  border-top: 1px solid #eee;
+}
+
+/* ---------------NAVBAR---------------- */
+
+nav {
+  height: 10vh;
+  padding: 0 5vh;
+}
+
+nav .navbar-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+
+nav .navbar-links a {
+  font-size: 1.5rem;
+  color: #000;
+  display: inline-block;
+  margin: 0.5rem;
+  padding: 0.5rem;
+  line-height: 23px;
+}
+
+nav .navbar-links a.logo {
+  margin-right: auto;
+}
+
+nav .navbar-links a:hover {
+  background-color: #ccc;
+}
+
+/* ---------------HERO IMAGE---------------- */
+
+.hero-img {
+  position: relative;
+  background: url("img/hamburger.jpg") no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+}
+
+.hero-img h1 {
+  position: absolute;
+  line-height: 54px;
+  left: 2rem;
+  bottom: 2rem;
+  color: #686363;
+}
+
+/* ---------------ABOUT SECTION---------------- */
+
+#about .text-container h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+#about .text-container h4 {
+  text-align: center;
+  margin-bottom: 1rem;
+  font-size: 1.4rem;
+}
+
+#about .text-container p {
+  font-size: 1.3rem;
+  text-align: left;
+  padding: 1rem 0;
+  word-spacing: 5px;
+}
+
+#about .text-container p span {
+  background-color: #ccc;
+}
+
+#about .text-container p.para2 {
+  color: #757575;
+}
+
+/* ---------------MENU SECTION---------------- */
+
+#menu h2 {
+  text-align: center;
+  margin-bottom: 3rem;
+  font-weight: 500;
+  font-size: 3rem;
+}
+
+#menu h4 {
+  font-size: 1.8rem;
+  letter-spacing: 5px;
+  margin-bottom: 1.5rem;
+}
+
+#menu p {
+  font-size: 1.3rem;
+  color: #757575;
+  margin-bottom: 4rem;
+}
+
+/* ---------------CONTACT SECTION---------------- */
+
+#contact {
+  display: block;
+}
+
+#contact h2 {
+  margin: 2rem 2rem 4rem;
+}
+
+#contact p {
+  font-size: 1.2rem;
+  padding: 1rem 2rem;
+}
+
+#contact p.address {
+  font-weight: 700;
+  color: #607d8b;
+  font-size: 1.5rem;
+}
+
+#contact form {
+  padding: 2rem;
+}
+
+#contact form input {
+  height: 3rem;
+  border: none;
+  border-bottom: 1px solid #eee;
+  width: 100%;
+  font-size: 1.4rem;
+  outline: none;
+  padding: 2rem 1rem;
+  margin-bottom: 1rem;
+}
+
+#contact form input:focus {
+  border: 2px solid #000;
+  border-radius: 5px;
+}
+
+#contact form input[type="submit"] {
+  text-align: center;
+  width: 15rem;
+  padding: 0;
+  cursor: pointer;
+}
+
+#contact form input[type="submit"]:hover {
+  background-color: #ccc;
+}
+
+/* ---------------FOOTER---------------- */
+
+footer {
+  background-color: #f1f1f1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  height: 15vh;
+}
+
+footer p {
+  font-size: 1.2rem;
+}
+
+/* ---------------MEDIA QUERIES---------------- */
+
+@media screen and (max-width: 992px) and (min-width: 576px) {
+  #about p.para2 {
+    display: none;
+  }
+  #menu {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+  }
+  #menu .section-img {
+    width: 100%;
+  }
+  #menu .section-img img {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  #about {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+  }
+  #menu {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+  }
+  #menu .section-img {
+    width: 100%;
+  }
+  #menu .section-img img {
+    width: 100%;
+  }
+}
